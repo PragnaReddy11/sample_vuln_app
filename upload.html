@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Assignment - CMU AIA Assignment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Assignment</h1>
+        <form method="POST" enctype="multipart/form-data" action="/upload">
+            <label for="file">Choose file to upload:</label>
+            <input type="file" name="file" id="file" required />
+
+            <input type="submit" value="Upload">
+        </form>
+        <a href="/dashboard">Back to Dashboard</a>
+    </div>
+</body>
+</html>
