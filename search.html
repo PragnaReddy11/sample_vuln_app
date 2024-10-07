@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Assignments - CMU AIA Assignment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Assignments</h1>
+        <form method="POST" action="/search">
+            <label for="query">Search for an assignment:</label>
+            <input type="text" name="query" id="query" placeholder="Enter file name to search" required />
+
+            <input type="submit" value="Search">
+        </form>
+        <a href="/dashboard">Back to Dashboard</a>
+    </div>
+</body>
+</html>
