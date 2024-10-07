@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CMU AIA Assignment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}!</h1>
+        <p>Select an option below:</p>
+
+        <div class="actions">
+            <a href="/upload-page" class="button">Upload Assignment</a>
+            <a href="/search-page" class="button">Search Assignments</a>
+        </div>
+
+        <a href="/">Logout</a>
+    </div>
+</body>
+</html>
